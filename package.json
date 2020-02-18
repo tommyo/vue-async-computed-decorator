@@ -2,11 +2,10 @@
   "name": "vue-async-computed-decorator",
   "version": "0.0.4",
   "description": "A vue-class-component decorator for vue-async-computed",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "module": "src/index.ts",
   "scripts": {
     "check": "npm run compile && npm run lint -s && npm run test -s",
-    "compile": "tsc",
+    "compile": "npx tsc",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "prepublishOnly": "npm run -s check",
     "test": "parcel build test/index.js --out-dir test/dist && node test/dist/index.js | tspec"
